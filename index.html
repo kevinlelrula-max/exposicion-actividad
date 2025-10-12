@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vulnerabilidades y Amenazas en la Nube</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    header {
+      background: linear-gradient(90deg, #00416a, #00b4db);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .accordion-button {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Vulnerabilidades y Amenazas en la Nube</h1>
+    <p class="lead">Análisis de riesgos y debilidades en entornos cloud</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container my-5">
+
+    <!-- Introducción -->
+    <section class="mb-5">
+      <div class="card p-4">
+        <h2 class="mb-3 text-primary">Introducción</h2>
+        <p>
+          La seguridad informática en la nube, o simplemente «seguridad en la nube», se refiere a un conjunto de tecnologías, servicios, controles y políticas que se utilizan para garantizar la protección de los datos, las aplicaciones y toda la infraestructura de la nube contra las amenazas internas y externas asociadas con la informática en la nube.
+        </p>
+        <p>
+          Antes de que puedas diseñar su estrategia de seguridad en la nube, el primer paso es conocer los riesgos y las amenazas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Amenazas y Riesgos -->
+    <section class="mb-5">
+      <div class="card p-4">
+        <h2 class="mb-3 text-danger">Amenazas y Riesgos de Seguridad en la Nube</h2>
+        <div class="accordion" id="amenazasAccordion">
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#configIncorrecta">
+                1. Configuración incorrecta
+              </button>
+            </h2>
+            <div id="configIncorrecta" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                Es una de las principales causas de brechas de seguridad. Ocurre cuando los recursos cloud, como bases de datos o almacenamiento, se configuran de forma incorrecta, dejando información expuesta públicamente. 
+                La automatización y la complejidad de los entornos cloud pueden incrementar este riesgo si no se aplican revisiones periódicas y controles de acceso adecuados.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#apiInsegura">
+                2. API inseguras
+              </button>
+            </h2>
+            <div id="apiInsegura" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Las API permiten la comunicación entre aplicaciones y servicios en la nube. Si no están protegidas correctamente mediante autenticación, validación de entradas o cifrado, pueden ser explotadas por atacantes para acceder a datos o manipular sistemas.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenazasInternas">
+                3. Amenazas internas
+              </button>
+            </h2>
+            <div id="amenazasInternas" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Los empleados, contratistas o administradores con acceso privilegiado pueden representar una amenaza significativa si usan indebidamente sus permisos, ya sea por negligencia o con fines maliciosos. El control de accesos y la monitorización de actividades son esenciales para reducir este riesgo.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fugaDatos">
+                4. Fuga o pérdida de datos
+              </button>
+            </h2>
+            <div id="fugaDatos" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                La pérdida o exposición no autorizada de información sensible es una de las consecuencias más graves de un ataque. Puede originarse por accesos indebidos, errores de configuración o vulnerabilidades en las aplicaciones alojadas en la nube.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abusoServicios">
+                5. Abuso de servicios cloud
+              </button>
+            </h2>
+            <div id="abusoServicios" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Los atacantes pueden utilizar los recursos en la nube para actividades ilegales, como minería de criptomonedas, distribución de malware o lanzamiento de ataques DDoS. Este tipo de abuso consume recursos y afecta el rendimiento de los sistemas.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secuestroCuentas">
+                6. Secuestro de cuentas
+              </button>
+            </h2>
+            <div id="secuestroCuentas" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Ocurre cuando los atacantes obtienen credenciales de acceso legítimas a servicios cloud, generalmente mediante phishing o ataques de fuerza bruta. Una vez dentro, pueden robar información, manipular configuraciones o interrumpir servicios.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#controlInsuficiente">
+                7. Control insuficiente y visibilidad limitada
+              </button>
+            </h2>
+            <div id="controlInsuficiente" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Las organizaciones que dependen en gran medida de proveedores cloud pueden tener una visibilidad limitada sobre la seguridad de su infraestructura. Esto dificulta la detección de incidentes o la aplicación de políticas de protección coherentes.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      </section>
+
+<section class="container my-5">
+
+  
+
+  <!-- Prevención de riesgos -->
+  <div class="card p-4 shadow-sm">
+    <h2 class="mb-3 text-primary">Cómo Prevenir los Riesgos de Seguridad en la Nube</h2>
+    <p>
+      Dada la amplia adopción de la digitalización por parte de las organizaciones y la actividad extrema de los cibercriminales, los proveedores de seguridad se apresuran a lanzar nuevos productos y actualizaciones para garantizar una protección de software adecuada para sus clientes. Pero, las implementaciones apresuradas y que no se han probado lo suficiente pueden hacer más daño que bien.
+    </p>
+    <p>
+      Por ello, incluso para las organizaciones que no se han visto afectadas por esta situación, ha sido una experiencia de aprendizaje: el fortalecimiento continuo de las medidas de seguridad siempre es una inversión que vale la pena. Tómalo como un recordatorio para revisar las medidas de seguridad implementadas en tu empresa o consulta con expertos en ciberseguridad. Una auditoría oportuna es el principal método de prevención de riesgos de seguridad en la nube que ayuda a identificar riesgos potenciales, diseñar e implementar un mecanismo confiable de respuesta a incidentes y allanar el camino hacia el cumplimiento de la seguridad.
+    </p>
+    <p>
+      Además de esto, a continuación recomendamos una variedad de prácticas de seguridad adicionales que ayudan a prevenir riesgos de seguridad en la nube para las organizaciones.
+    </p>
+
+    <div class="accordion" id="accordionRiesgos">
+
+      <!-- Gestión de riesgos de terceros -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            Gestión de Riesgos de Terceros
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionRiesgos">
+          <div class="accordion-body">
+            Se deben retrasar los parches y las actualizaciones para los dispositivos informáticos de los usuarios finales y probar las actualizaciones de seguridad en entornos aislados antes de usarlas en producción. Al aislar un elemento nuevo y potencialmente riesgoso de toda la infraestructura, tus equipos de TI pueden evitar todo el calvario de la recuperación del sistema y tener mucho tiempo para investigar e informar el problema.
+            <br><br>
+            Para defenderse de las vulnerabilidades en el software de uso generalizado, las organizaciones necesitan una visión clara de su cadena de suministro de software. No se trata solo de reaccionar cuando se encuentra una vulnerabilidad, sino de estar preparados con información útil para evitar o mitigar el impacto. Por lo tanto, al confiar en los servicios en la nube, las empresas y sus departamentos de TI deben prestar especial atención a los productos SaaS a los que confían sus operaciones comerciales y asegurarse de realizar una debida diligencia exhaustiva al elegir proveedores, además de leer atentamente los acuerdos contractuales en la etapa de registro.
+          </div>
+        </div>
+      </div>
+
+      <!-- Cifrado de datos -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            Cifrado de Datos
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionRiesgos">
+          <div class="accordion-body">
+            El cifrado de datos es un método para proteger los datos mediante su codificación de forma que resulte ilegible para usuarios no autorizados sin un código especial (una clave de cifrado). El cifrado ayuda a evitar la filtración y exposición de datos confidenciales, tanto en reposo como en tránsito, especialmente si se implementa en combinación con un software de gestión de claves que garantice la seguridad de su clave de cifrado. AxCrypt, NordLocker y EncryptionSafe son algunas de las soluciones de cifrado de datos más populares del mercado actual.
+          </div>
+        </div>
+      </div>
+
+      <!-- Control de acceso reforzado -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            Control de Acceso Reforzado
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionRiesgos">
+          <div class="accordion-body">
+            Para evitar riesgos de seguridad en la nube como fugas de datos, amenazas internas y vulnerabilidades de tecnología compartida, es importante establecer límites estrictos al acceso de los usuarios a partes específicas de tus sistemas. Medidas de seguridad como el control de acceso basado en roles pueden reducir suficientemente el riesgo de exponer información confidencial o crítica para la empresa a miembros del personal no deseados y dejarles solo con los privilegios exactos necesarios para completar sus tareas. Además, la autenticación multifactor puede garantizar una seguridad adicional de los datos cuando se necesita más que una contraseña para obtener acceso.
+          </div>
+        </div>
+      </div>
+
+      <!-- Gestión automatizada de la nube -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            Gestión Automatizada de la Nube
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionRiesgos">
+          <div class="accordion-body">
+            La automatización de la configuración de la nube ayuda a gestionar infraestructuras de nube complejas, lo que evita que los sistemas sufran errores y configuraciones incorrectas provocados por el hombre. Todo lo que necesitas hacer es configurar las líneas de base de configuración seguras para todos tus recursos de la nube y disfrutar del cumplimiento del sistema con las mejores prácticas de seguridad. Considera herramientas como Puppet, Chef, Ansible y similares para automatizar la configuración y la gestión de la infraestructura de la nube.
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan de respaldo y recuperación ante desastres -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            Plan de Respaldo y Recuperación ante Desastres
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionRiesgos">
+          <div class="accordion-body">
+            Como se mencionó anteriormente, no hay nada que se pueda hacer para prevenir eventos imprevistos, como desastres naturales o accidentes, pero la pérdida y el daño de los datos se pueden prevenir. Al realizar copias de seguridad periódicas de los datos críticos mediante un almacenamiento de datos alternativo y realizar pruebas de tu plan de recuperación ante desastres de vez en cuando, te asegurarás de que tus datos y software importantes resistan diferentes tipos de amenazas, tanto de la naturaleza como de los atacantes.
+          </div>
+        </div>
+      </div>
+
+      <!-- Arquitectura neutral en la nube -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+            Arquitectura Neutral en la Nube
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionRiesgos">
+          <div class="accordion-body">
+            Esta estrategia de arquitectura implica que tus aplicaciones y servicios en la nube no están agrupados con ninguna plataforma en la nube en particular y se pueden implementar y usar en cualquiera de ellas. Ser neutral en la nube proporciona un nivel de independencia que ayuda a evitar la dependencia de un proveedor y garantiza la estabilidad del servicio en caso de una interrupción del servicio por parte del proveedor. Además, este enfoque de diseño de sistemas permite la distribución de datos y cargas de trabajo en múltiples nubes, lo que mejora la resiliencia de tu sistema frente a una serie de amenazas.
+          </div>
+        </div>
+      </div>
+
+      <!-- Arquitectura de confianza cero -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+            Arquitectura de Confianza Cero
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionRiesgos">
+          <div class="accordion-body">
+            La característica principal de este modelo de diseño es tratar a cualquier usuario y actividad como algo en lo que no se puede confiar, lo que implica una verificación de identidad compleja mediante un proceso de autenticación multifactor, acceso con privilegios mínimos con microsegmentación, monitoreo rígido del sistema y análisis en tiempo real. Estas medidas ayudan a reducir la superficie de ataque, mejorar la protección de los puntos finales de la red y detectar actividades sospechosas en un instante.
+          </div>
+        </div>
+      </div>
+
+      <!-- Capacitación de empleados -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading8">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+            Capacitación de Empleados
+          </button>
+        </h2>
+        <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionRiesgos">
+          <div class="accordion-body">
+            Por último, pero no por ello menos importante, la formación en materia de concienciación sobre seguridad y respuesta a incidentes para el personal de su organización puede ser una buena parte del éxito en la consecución de la seguridad del sistema. Según el último Informe de investigaciones sobre violaciones de datos de 2024 de Verizon, el 68 % de las violaciones se producen debido a que los empleados desconocen las prácticas de ciberseguridad, lo que da lugar a campañas de ingeniería social exitosas, contraseñas débiles e incluso a la exposición involuntaria de datos.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</section class="mb-5">
+  <h2 class="h4 text-primary mb-3">
+  <ul>
+  <li><a href="vulnerabilidades-web.html">Vulnerabilidades y prevenciones en la nube</a></li>
+</ul>
+</section>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
